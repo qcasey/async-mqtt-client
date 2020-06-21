@@ -2,8 +2,8 @@
 
 AsyncMqttClient::AsyncMqttClient()
 : _connected(false)
-, _connectPacketNotEnoughSpace(false)
 , _lockMutiConnections(false)
+, _connectPacketNotEnoughSpace(false)
 , _disconnectFlagged(false)
 , _tlsBadFingerprint(false)
 , _lastClientActivity(0)
