@@ -169,6 +169,7 @@ void AsyncMqttClient::_clear() {
   _lastPingRequestTime = 0;
   _connected = false;
   _disconnectFlagged = false;
+  _lockMutiConnections = false;
   _connectPacketNotEnoughSpace = false;
   _tlsBadFingerprint = false;
   _freeCurrentParsedPacket();
