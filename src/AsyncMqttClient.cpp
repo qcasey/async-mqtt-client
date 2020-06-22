@@ -176,7 +176,6 @@ void AsyncMqttClient::_clear() {
 
   _pendingPubRels.clear();
   _pendingPubRels.shrink_to_fit();
-  _lockMutiConnections = true;
   _toSendAcks.clear();
   _toSendAcks.shrink_to_fit();
 
